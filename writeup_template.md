@@ -25,17 +25,15 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
 
-Step1, from color to gray image
-Step2, create mask image by setting only the front area for lane detection
-Step3, blur image with filter to remove noises 
-Step4, threshold the blur image to binary
-Step5, detect edge by canny with the mask image
-Step6, apply the Hough Transform for all lines
-Step7, mark the left and right lane area seperately by slope value
-Step8, compute the average slope and center position for left and right lane
-Step9, reconstruct the full length line for left and right land
-after hough detection, using course value mark the areas we find real lane, by drawing white lines in black image to create mask
-step8, get more precision result with mask of coarse lines
+#### Step1, from color to gray image
+#### Step2, create mask image by setting only the front area for lane detection
+#### Step3, blur image with filter to remove noises 
+#### Step4, threshold the blur image to binary
+#### Step5, detect edge by canny with the mask image
+#### Step6, apply the Hough Transform for all lines
+#### Step7, mark the left and right lane area seperately by slope value
+#### Step8, compute the average slope and center position for left and right lane
+#### Step9, reconstruct the full length line for left and right land
 
 In order to draw a single line on the left and right lanes, I defined the left_right_lines() function for step7~9
 
