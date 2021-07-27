@@ -15,7 +15,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "grayimage"
+[image1]: ./test_images_output/tmp_solidWhiteCurve.jpg "grayimage"
+[image2]: ./test_images_output/solidWhiteCurve.jpg "full length line on lane"
 
 ---
 
@@ -31,14 +32,15 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 #### Step4, threshold the blur image to binary
 #### Step5, detect edge by canny with the mask image
 #### Step6, apply the Hough Transform for all lines
+![alt text][image1]
 #### Step7, mark the left and right lane area seperately by slope value
 #### Step8, compute the average slope and center position for left and right lane
 #### Step9, reconstruct the full length line for left and right land
 
 In order to draw a single line on the left and right lanes, I defined the left_right_lines() function for step7~9
 
-![alt text][image1]
-[image1]: ./test_images_output/solidWhiteCurve.jpg "full length line on lane"
+![alt text][image2]
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
